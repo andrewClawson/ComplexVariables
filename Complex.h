@@ -7,6 +7,8 @@
 		void SetMod(); // setter for the modulus.
 		float Mod(); // getter for the modulus.
 		static Complex Add(Complex z1, Complex z2);
+		static Complex Subtract(Complex z1, Complex z2);
+		void Display();
 
 	private:
 		float real;

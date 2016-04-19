@@ -33,8 +33,18 @@ Complex::Mod()
 	return modulus;
 }
 
-Complex::Add(Complex c1, Complex c2)
+//Definition for Static Add method.
+Complex::Add(Complex z1, Complex z2)
 {
-	return Complex(
+	float _real = z1.Re() + z2.Re(); //Add real components
+	float _imaginary = z1.Im() + z2.Im(); // Add imaginary components
+	return Complex(_real,_imaginary);
 }
 
+//Definition for static Subtract method.
+Complex::Subtract(Complex z2, Complex z2)
+{
+	float _real = z1.Re() - z2.Re();
+	float _imaginary = z1.Im() - z2.Im();
+	return Complex(_real,_imaginary);
+}
